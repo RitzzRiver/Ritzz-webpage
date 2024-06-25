@@ -1,0 +1,9 @@
+body {
+    background-image: -webkit-image-set("./background.jpg");
+
+    font-family: "Playwrite DE Grund", cursive;;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-size: 17px;
+    text-align: center;
+}
