@@ -1,5 +1,7 @@
 <script setup>
-    defineProps({
+import { useRouter } from 'vue-router';
+
+const props = defineProps({
         buttonText: {
             type: String,
             required: true, 
@@ -13,16 +15,20 @@
             required: true,
         },
     });
+
+    const routerLink = useRouter();
+
+    const navigate = () => {
+        routerLink.push(props.link)
+    }
 </script>
 
 <template>
     <span id="infobox">
-        <a :href="link">
-            <button id="buttonWithIcon">
+            <button id="buttonWithIcon" @click="navigate">
                 <i :class='icon'></i>
-                {{buttonText}}
+                {{ props.buttonText }}
             </button>
-        </a>
     </span>
 </template>
 
@@ -46,6 +52,4 @@
         font-optical-sizing: auto;
         font-size: 17px;
     }
-
-
 </style>

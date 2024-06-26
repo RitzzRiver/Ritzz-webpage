@@ -7,7 +7,7 @@
     <div id="panel">
         <div id="leftpanel">
             <div id="homebtn">
-                <BWI icon="bx bxs-home" link="./welcome.vue"/>
+                <BWI link="/home" icon="bx bxs-home"/>
             </div>
             <p id="header">about me</p>
             <p>
@@ -22,7 +22,7 @@
         <div id="rightpanel">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_iASM509EsbFyS0LaFoWP8JYTOvkpf9iVfg&s" width="300">
             <br>
-            <BWTAI button-text="likes and dislikes" icon="bx bx-check"/>
+            <BWTAI button-text="likes and dislikes" icon="bx bx-check" link="/preferences"/>
         </div>
 
     </div>

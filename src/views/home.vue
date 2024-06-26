@@ -15,7 +15,7 @@ import BWTI from "../components/ButtonWithTextAndIcon.vue";
         <img src="../assets/ramas.png" width="400"/>
         
         <div id="buttons">
-            <BWTI button-text="about me" icon="bx bx-info-circle" link="./about.vue"/>
+            <BWTI button-text="about me" icon="bx bx-info-circle" link="/about"/>
             <BWTI button-text="contact" icon="bx bx-envelope" link="/contact"/>
             <BWTI button-text="likes and dislikes" icon="bx bx-check" link="/preferences"/>
         </div>

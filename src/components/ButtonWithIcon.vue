@@ -1,5 +1,8 @@
 <script setup>
-    defineProps({
+
+    import { useRouter } from 'vue-router';
+
+    const props = defineProps({
         icon: {
             type: String,
             required: true,
@@ -9,12 +12,16 @@
             required: true,
         }
     });
+
+    const routerLink = useRouter();
+
+    const navigate = () => {
+        routerLink.push(props.link)
+    };
 </script>
 
 <template>
-    <RouterLink :to="link">
-        <button id="home"><i :class='icon' id="home icon"></i></button>
-    </RouterLink>
+    <button id="home" @Click="navigate"><i :class='icon' id="home icon"></i></button>
 </template>
 
 <style>
