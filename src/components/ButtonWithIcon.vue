@@ -12,7 +12,9 @@
 </script>
 
 <template>
-    <button id="home"><i :class='icon' id="home icon"></i></button>
+    <RouterLink :to="link">
+        <button id="home"><i :class='icon' id="home icon"></i></button>
+    </RouterLink>
 </template>
 
 <style>
