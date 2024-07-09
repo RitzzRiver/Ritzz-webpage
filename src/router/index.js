@@ -1,19 +1,41 @@
-import { createRouter, createMemoryHistory, useLink} from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/home.vue'
 import AboutView from '../views/about.vue'
-import PreferencesView from '../views/preferences.vue';
-import ContactView from '../views/contact.vue';
-
-const routes = [
-  { path: '/', component: HomeView },
-  { path: '/about', component: AboutView },
-  { path: '/contact', component: ContactView},
-  { path: '/preferences', component: PreferencesView},
-];
+import ContactView from '../views/contact.vue'
+import PreferencesView from '../views/preferences.vue'
 
 const router = createRouter({
-  history: createMemoryHistory(),
-  routes,
-});
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: HomeView
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: AboutView
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: ContactView
+    },
+    {
+      path: '/preferences',
+      name: 'preferences',
+      component: PreferencesView
+    },
+    // {
+    //   path: '/about',
+    //   name: 'about',
+    //   // route level code-splitting
+    //   // this generates a separate chunk (About.[hash].js) for this route
+    //   // which is lazy-loaded when the route is visited.
+    //   component: () => import('../views/AboutView.vue')
+    // }
+  ]
+})
 
-export default router;
+export default router
