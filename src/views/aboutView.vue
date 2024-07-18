@@ -7,7 +7,9 @@
     <div id="panel">
         <div id="leftpanel">
             <div id="homebtn">
-                <BWI link="/home" icon="bx bxs-home"/>
+                <BWI link="/">
+                    <img src="../components/icons/home.png"/>
+                </BWI>
             </div>
             <p id="header">about me</p>
             <p>

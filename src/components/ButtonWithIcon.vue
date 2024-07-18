@@ -1,45 +1,48 @@
 <script setup>
+import { useRouter } from 'vue-router';
 
-    import { useRouter } from 'vue-router';
+const props = defineProps({
+    icon: {
+        type: String,
+        required: true
+    },
+    link: {
+        type: String,
+        required: true,
+    },
+});
 
-    const props = defineProps({
-        icon: {
-            type: String,
-            required: true,
-        },
-        link: {
-            type: String,
-            required: true,
-        }
-    });
+const routerLink = useRouter();
 
-    const routerLink = useRouter();
+const navigate = () => {
+    routerLink.push(props.link)
+}
 
-    const navigate = () => {
-        routerLink.push(props.link)
-    };
 </script>
 
 <template>
-    <button id="home" @Click="navigate"><i :class='icon' id="home icon"></i></button>
+    <button @click="navigate">
+        <slot></slot>
+    </button>
 </template>
 
 <style>
-    #home {
-        margin-right: 5px;
-        margin-bottom: 5px;
-        padding: center;
-        padding: 10px;
-        background-color: rgb(120, 207, 112);
-        border-color: transparent;
-        border-radius: 10px;
-    }
+button {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: center;
+    padding: 10px;
+    background-color: rgb(120, 207, 112);
+    border-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
-    i {
-        font-size: 25px;
-    }
+i {
+    font-size: 25px;
+}
 
-    #home :hover {
-        cursor:pointer;
-    }
+button:hover {
+    background-color: rgb(82, 156, 74);
+}
 </style>
