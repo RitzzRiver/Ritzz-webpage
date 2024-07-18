@@ -1,5 +1,5 @@
 <script setup>
-import { useRouter } from 'vue-router';
+import { useRouter } from 'vue-router'
 
 const props = defineProps({
     icon: {
@@ -8,16 +8,15 @@ const props = defineProps({
     },
     link: {
         type: String,
-        required: true,
-    },
-});
+        required: true
+    }
+})
 
-const routerLink = useRouter();
+const routerLink = useRouter()
 
 const navigate = () => {
     routerLink.push(props.link)
 }
-
 </script>
 
 <template>
@@ -32,7 +31,6 @@ button {
     margin-bottom: 5px;
     padding: center;
     padding: 10px;
-    background-color: rgb(120, 207, 112);
     border-color: transparent;
     border-radius: 10px;
     cursor: pointer;
@@ -40,9 +38,5 @@ button {
 
 i {
     font-size: 25px;
-}
-
-button:hover {
-    background-color: rgb(82, 156, 74);
 }
 </style>

@@ -1,9 +1,175 @@
-body {
-    background-image: -webkit-image-set("./tumblr_static_13k8h58u5w5c000gw04scggs0.jpg");
+:root {
+    --window: rgba(247, 247, 247, 0.3);
+    --button: #7b712c;
+    --buttonHover: #3f3f19;
+}
 
-    font-family: "Playwrite DE Grund", cursive;;
+body {
+    background-image: -webkit-image-set('./background.jpg');
+    font-family: 'Playwrite DE Grund', cursive;
     font-weight: 400;
     font-optical-sizing: auto;
     font-size: 17px;
     text-align: center;
+}
+
+li {
+    text-align: left;
+    font-size: 20px
+}
+
+section {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--window);
+    backdrop-filter: blur(1px);
+    border-radius: 10px;
+}
+
+#title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+}
+
+.topic {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+.samples {
+    padding: 10px;
+}
+
+.ace_text_animated {
+    background: linear-gradient(to right, #000000, #f7f7f7, #6b006c, #cbcbcb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in infinite;
+    background-size: 400% 100%;
+}
+
+.pan_text_animated {
+    background: linear-gradient(to right, #f72088, #f7d100, #20abf7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,
+    100% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+#content {
+    border-width: 3px;
+    background-color: var(--window);
+    backdrop-filter: blur(1px);
+    border-radius: 10px;
+    width: 25%;
+    padding: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#buttons {
+    padding-left: 15px;
+    text-align: center;
+}
+
+.buttonIcon {
+    position: relative;
+    top: 2.5px;
+}
+
+#homebtn {
+    text-align: center;
+}
+
+#panel {
+    float: left;
+    padding: 50px;
+    border-width: 3px;
+    background-color: var(--window);
+    backdrop-filter: blur(1px);
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#leftpanel {
+    float: left;
+    width: 50%;
+}
+
+#rightpanel {
+    float: left;
+    width: 50%;
+    margin-top: 15%;
+}
+
+#header {
+    font-size: 40px;
+    margin: auto;
+}
+
+p {
+    word-wrap: break-word;
+    font-size: 20px;
+}
+
+img {
+    border-radius: 20px;
+}
+
+#buttonWithIcon {
+    background-color: var(--button);
+}
+
+#buttonWithIcon:hover {
+    background-color: var(--buttonHover);
+}
+
+button {
+    background-color: var(--button);
+}
+button:hover {
+    background-color: var(--buttonHover);
+}
+
+#container{
+    background-color: var(--window);
+}
+
+#likes {
+    float: left;
+    width: 50%;
+}
+
+#dislikes {
+    float: left;
+    width: 50%;
+}
+
+#likes {
+    list-style-image: url("../components/icons/heart-solid-24.png");
+}
+
+#dislikes {
+    list-style-image: url("../components/icons/message-rounded-x-solid-24.png");
 }
