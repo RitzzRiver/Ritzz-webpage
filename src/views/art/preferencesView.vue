@@ -81,4 +81,32 @@ p {
     font-size: 20px;
     color: red;
 }
+
+
+@media(max-width:900px) {
+
+    .main-container {
+        align-items: center;
+        display: block;
+        width: 400px;
+        transform: translate(-20px,0);
+    }
+
+    .likes {
+        display: block;
+        transform: translate(20%);
+    }
+
+    .likes ul li {
+        width: auto;
+        transform: translate(-20%);
+        font-size: 20px;
+    }
+
+    .dislikes ul li {
+        width: auto;
+        transform: translate(8%);
+        font-size: 20px;
+    }
+}
 </style>

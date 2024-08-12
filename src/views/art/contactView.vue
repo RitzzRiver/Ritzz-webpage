@@ -5,27 +5,27 @@
 <template>
     <main>
         <section class="main-container">
-            <BWI link="/art">
+            <BWI class="button" link="/art">
                 <img src="../../components/icons/home.png"/>
             </BWI>
             <p class="title">you can find me on</p>
             <a href="https://www.pinterest.es/StarlightDreamer56/" target="_blank">
-                <BWI>
+                <BWI class="button">
                     <img src="../../components/icons/pinterest.png"/>
                 </BWI>
             </a>
             <a href="https://twitter.com/RitzzRiver" target="_blank">
-                <BWI>
+                <BWI class="button">
                     <img src="../../components/icons/twitter.png"/>
                 </BWI>
             </a>
             <a href="https://discord.com/users/619340299155800106" target="_blank">
-                <BWI>
+                <BWI class="button">
                     <img src="../../components/icons/discord.png"/>
                 </BWI>
             </a>
             <a href="https://t.me/StarlightDreamer56" target="_blank">
-                <BWI>
+                <BWI class="button">
                     <img src="../../components/icons/telegram.png"/>
                 </BWI>
             </a>
@@ -41,4 +41,10 @@ main {
     transform: translate(0, 100%);
 }
 
+.button{
+    transform: translate(200%);
+}
+a .button{
+    transform: translate(40%);
+}
 </style>

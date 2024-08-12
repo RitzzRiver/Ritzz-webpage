@@ -3,6 +3,8 @@
 
 :root {
     /* for the art area */
+
+    --default-background-color: #FDFCDC;
     --art-background-image: -webkit-image-set('../background2.jpg');
     --art-window: #807f61b9;
     --art-button: #5a5944;
@@ -25,7 +27,7 @@
 }
 
 body {
-    background-image: var(--art-background-image);
+    /* background-image: var(--art-background-image); */
     margin: 0;
     font-family: 'Shantell Sans', cursive;
     font-size: 20px;

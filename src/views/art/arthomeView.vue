@@ -9,7 +9,10 @@ import BWTI from '../../components/ButtonWithTextAndIcon.vue'
                 <div class="secondary-container">
                     <img src="../../assets/ramas.png" width="400" />
                     <p>
-                        INFJ-T lazy Artist <br />
+                        INFJ-T<br/>
+                        lazy (unmotivated) artist<br/>
+                        Kitty cat cat<br/>
+                        Roguelike enjoyer<br/>
                         They/them
                     </p>
                     <p>
@@ -21,25 +24,25 @@ import BWTI from '../../components/ButtonWithTextAndIcon.vue'
                     <img src="../../assets/ramas.png" width="400" />
                 </div>
     
-                <div id="buttons">
-                    <BWTI button-text="about me" link="art/about">
+                <div class="buttons-container">
+                    <BWTI class="buttons" button-text="about me" link="/art/about/">
                         <img
                             class="buttonIcon"
                             src="../../components/icons/info-circle.png"
                             width="24"
                         />
                     </BWTI>
-                    <BWTI button-text="contact" link="art/contact">
+                    <BWTI class="buttons" button-text="contact" link="art/contact">
                         <img class="buttonIcon" src="../../components/icons/envelope.png" width="24" />
                     </BWTI>
-                    <BWTI button-text="likes and dislikes" link="art/preferences">
+                    <BWTI class="buttons" button-text="likes and dislikes" link="art/preferences">
                         <img
                             class="buttonIcon"
                             src="../../components/icons/message-square-check.png"
                             width="24"
                         />
                     </BWTI>
-                    <BWTI button-text="Commisions" link="/art/commisions/TermsOfService-EN">
+                    <BWTI class="buttons" button-text="Commisions (currently on wip)" link="/art/commisions/terms-of-service" disabled="true">
                         <img class="buttonIcon" src="../../components/icons/store.png" width="24" />
                     </BWTI>
                 </div>
@@ -54,7 +57,31 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translate(0, 80%);
+    transform: translate(0, 40%);
 }
 
+.buttons-container {
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width:900px) {
+
+    img {
+        width: 300px;
+    }
+    .main-container{
+        align-items: center;
+        width: 400px;
+        transform: translate(0, -15%);
+    }
+    .buttons {
+        width: 100px;
+        height: 100px;
+    }
+
+    .buttons img {
+        width: 20px;
+    }
+}
 </style>

@@ -8,8 +8,4 @@
 </template>
 
 <style scoped>
-h1, h2{
-    color: white;
-    background-color: aqua;
-}
 </style>
