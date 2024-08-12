@@ -1,0 +1,77 @@
+@import 'footer.css';
+@import 'components.css';
+
+:root {
+    /* for the art area */
+
+    --default-background-color: #FDFCDC;
+    --art-background-image: -webkit-image-set('../background2.jpg');
+    --art-window: #807f61b9;
+    --art-button: #5a5944;
+    --art-buttonHover: #474636;
+    --art-text-color: #333327;
+
+    /* for the dev area */
+    --dev-background-image: './background2.jpg';
+    --dev-background: #DCDCD0;
+    --dev-footer-background: #ABA79B;
+    --dev-button: #7A7265;
+    --dev-button-hover: #8E6E53;
+    --dev-text-color: #433E3F;
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    /* background-image: var(--art-background-image); */
+    margin: 0;
+    font-family: 'Shantell Sans', cursive;
+    font-size: 20px;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+        'BNCE' 0,
+        'INFM' 0,
+        'SPAC' 0;
+}
+
+.main-container {
+    max-width: fit-content;
+    background-color: var(--art-window);
+    border-radius: 60px;
+    backdrop-filter: blur(2px);
+    box-shadow: 1px 1px 10px var(--art-buttonHover);
+    padding: 50px;
+}
+
+.secondary-container {
+    position: relative;
+    display: flexbox;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+
+}
+.subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.topic {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}

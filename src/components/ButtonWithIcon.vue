@@ -4,11 +4,11 @@ import { useRouter } from 'vue-router'
 const props = defineProps({
     icon: {
         type: String,
-        required: true
+        required: false
     },
     link: {
         type: String,
-        required: true
+        required: false
     }
 })
 
@@ -24,19 +24,3 @@ const navigate = () => {
         <slot></slot>
     </button>
 </template>
-
-<style>
-button {
-    margin-right: 5px;
-    margin-bottom: 5px;
-    padding: center;
-    padding: 10px;
-    border-color: transparent;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-i {
-    font-size: 25px;
-}
-</style>
