@@ -42,7 +42,7 @@ import BWTI from '../../components/ButtonWithTextAndIcon.vue'
                             width="24"
                         />
                     </BWTI>
-                    <BWTI class="buttons" button-text="Commisions (currently on wip)" link="/art/commisions/terms-of-service" disabled="true">
+                    <BWTI class="buttons" button-text="Commisions (currently on wip)" link="/art/commisions/terms-of-service">
                         <img class="buttonIcon" src="../../components/icons/store.png" width="24" />
                     </BWTI>
                 </div>
