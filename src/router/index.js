@@ -19,6 +19,21 @@ const router = createRouter({
             redirect: '/art'
         },
         {
+<<<<<<< Updated upstream
+=======
+            path: '/art/about',
+            redirect: '/art/about'
+        },
+        {
+            path: '/art/contact',
+            redirect: '/art/contact'
+        },
+        {
+            path: '/art/preferences',
+            redirect: '/art/preferences'
+        },
+        {
+>>>>>>> Stashed changes
             path: '/art',
             component: artHomeView,
             meta: { title: 'Home' }
