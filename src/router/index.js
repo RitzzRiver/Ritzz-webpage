@@ -58,18 +58,6 @@ const router = createRouter({
             component: NotFoundView,
             meta: { title: 'PAGE NOT FOUND' }
         },
-        {
-            path: '/art/about',
-            redirect: '/art/about'
-        },
-        {
-            path: '/art/contact',
-            redirect: '/art/contact'
-        },
-        {
-            path: '/art/preferences',
-            redirect: '/art/preferences'
-        },
     ]
 })
 
