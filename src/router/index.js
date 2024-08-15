@@ -19,18 +19,6 @@ const router = createRouter({
             redirect: '/art'
         },
         {
-            path: '/art/about',
-            redirect: '/art/about'
-        },
-        {
-            path: '/art/contact',
-            redirect: '/art/contact'
-        },
-        {
-            path: '/art/preferences',
-            redirect: '/art/preferences'
-        },
-        {
             path: '/art',
             component: artHomeView,
             meta: { title: 'Home' }
@@ -70,7 +58,19 @@ const router = createRouter({
             path: '/:pathMatch(.*)*',
             component: () => NotFoundView,
             meta: { title: 'PAGE NOT FOUND' }
-        }
+        },
+        {
+          path: '/art/about',
+          redirect: '/art/about'
+      },
+      {
+          path: '/art/contact',
+          redirect: '/art/contact'
+      },
+      {
+          path: '/art/preferences',
+          redirect: '/art/preferences'
+      },
     ]
 })
 
