@@ -25,8 +25,7 @@ const router = createRouter({
         },
         {
             path: '/art/about',
-            name: 'about-art',
-            component: () => AboutView,
+            component: AboutView,
             meta: { title: 'About' }
         },
         {
@@ -36,41 +35,41 @@ const router = createRouter({
         },
         {
             path: '/art/preferences',
-            component: () => PreferencesView,
+            component: PreferencesView,
             meta: { title: 'Likes and dislikes' }
         },
         {
             path: '/art/commisions/terms-of-service',
-            component: () => ENTOSView,
+            component: ENTOSView,
             meta: { title: 'Terms of service' }
         },
         {
             path: '/art/commisions/terminos-de-servicio',
-            component: () => ESTOSView,
+            component: ESTOSView,
             meta: { title: 'Terminos de servicio' }
         },
         {
             path: '/dev',
-            component: () => devHomeView,
+            component: devHomeView,
             meta: { title: 'Home' }
         },
         {
             path: '/:pathMatch(.*)*',
-            component: () => NotFoundView,
+            component: NotFoundView,
             meta: { title: 'PAGE NOT FOUND' }
         },
         {
-          path: '/art/about',
-          redirect: '/art/about'
-      },
-      {
-          path: '/art/contact',
-          redirect: '/art/contact'
-      },
-      {
-          path: '/art/preferences',
-          redirect: '/art/preferences'
-      },
+            path: '/art/about',
+            redirect: '/art/about'
+        },
+        {
+            path: '/art/contact',
+            redirect: '/art/contact'
+        },
+        {
+            path: '/art/preferences',
+            redirect: '/art/preferences'
+        },
     ]
 })
 
