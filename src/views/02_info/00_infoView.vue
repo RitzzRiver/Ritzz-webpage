@@ -25,17 +25,17 @@ import BWTI from '../../components/ButtonWithTextAndIcon.vue'
                 </div>
     
                 <div class="buttons-container">
-                    <BWTI class="buttons" button-text="about me" link="/art/about/">
+                    <BWTI class="buttons" button-text="about me" link="/info/about/">
                         <img
                             class="buttonIcon"
                             src="../../components/icons/info-circle.png"
                             width="24"
                         />
                     </BWTI>
-                    <BWTI class="buttons" button-text="contact" link="art/contact">
+                    <BWTI class="buttons" button-text="contact" link="info/contact">
                         <img class="buttonIcon" src="../../components/icons/envelope.png" width="24" />
                     </BWTI>
-                    <BWTI class="buttons" button-text="likes and dislikes" link="art/preferences">
+                    <BWTI class="buttons" button-text="likes and dislikes" link="info/preferences">
                         <img
                             class="buttonIcon"
                             src="../../components/icons/message-square-check.png"
@@ -49,39 +49,11 @@ import BWTI from '../../components/ButtonWithTextAndIcon.vue'
             </div>
         </section>
     </main>
+    <footer>
+        <p class="copyright">© 2024 RitzzRiver</p>
+    </footer>
 </template>
 
 <style scoped>
 
-main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translate(0, 40%);
-}
-
-.buttons-container {
-    display: flex;
-    justify-content: center;
-}
-
-@media(max-width:900px) {
-
-    img {
-        width: 300px;
-    }
-    .main-container{
-        align-items: center;
-        width: 400px;
-        transform: translate(0, -15%);
-    }
-    .buttons {
-        width: 100px;
-        height: 100px;
-    }
-
-    .buttons img {
-        width: 20px;
-    }
-}
 </style>

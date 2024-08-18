@@ -6,7 +6,7 @@ const route = useRoute()
 
 watch(route, (newRoute) => {
     const path = newRoute.path
-    if (path.startsWith('/art')) {
+    if (path.startsWith('/info')) {
         document.body.style.backgroundImage = 'var(--art-background-image)';
     }
     else {

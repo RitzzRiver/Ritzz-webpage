@@ -1,63 +1,99 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import artHomeView from '../views/art/arthomeView.vue'
-import AboutView from '../views/art/aboutView.vue'
-import ContactView from '../views/art/contactView.vue'
-import PreferencesView from '../views/art/preferencesView.vue'
-import ENTOSView from '../views/art/ENtermsofserviceView.vue'
-import ESTOSView from '../views/art/EStermsofserviceView.vue'
-
-import devHomeView from '../views/dev/devhomeView.vue'
-
-import NotFoundView from '../views/notFoundView.vue'
+// main
+import mainPageView from '../views/00_main/landingView.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
+        // root
         {
             path: '/',
-            redirect: '/art'
+            component: mainPageView,
+            meta: { title: 'Landing page' }
+        },
+
+        // dev
+        {
+            path: '/dev',
+            component: () => import('../views/01_dev/devhomeView.vue'),
+            meta: { title: 'Dev page' }
+        },
+
+        // info
+        {
+            path: '/info',
+            component: () => import('../views/02_info/00_infoView.vue'),
+            meta: { title: 'Main page' }
         },
         {
-            path: '/art',
-            component: artHomeView,
-            meta: { title: 'Home' }
-        },
-        {
-            path: '/art/about',
-            component: AboutView,
+            path: '/info/about',
+            component: () => import('../views/02_info/01_aboutView.vue'),
             meta: { title: 'About' }
         },
         {
-            path: '/art/contact',
-            component: ContactView,
+            path: '/info/contact',
+            component: () => import('../views/02_info/02_contactView.vue'),
             meta: { title: 'Contact' }
         },
         {
-            path: '/art/preferences',
-            component: PreferencesView,
+            path: '/info/preferences',
+            component: () => import('../views/02_info/03_preferencesView.vue'),
             meta: { title: 'Likes and dislikes' }
+        },
+
+        // art
+        {
+            path: '/art',
+            component: () => import('../views/03_art/00_artView.vue'),
+            meta: { title: 'Art page' }
+        },
+        {
+            path: '/art/commisions',
+            component: () => import('../views/03_art/00_commisions/00_infoView.vue'),
+            meta: { title: 'Commisions info' }
+        },
+        {
+            path: '/art/commisions/status',
+            component: () => import('../views/03_art/00_commisions/01_statusView.vue'),
+            meta: { title: 'Commision status' }
         },
         {
             path: '/art/commisions/terms-of-service',
-            component: ENTOSView,
+            component: () => import('../views/03_art/00_commisions/02_TOSView.vue'),
             meta: { title: 'Terms of service' }
         },
         {
             path: '/art/commisions/terminos-de-servicio',
-            component: ESTOSView,
+            component: () => import('../views/03_art/00_commisions/03_TDSView.vue'),
             meta: { title: 'Terminos de servicio' }
         },
         {
-            path: '/dev',
-            component: devHomeView,
-            meta: { title: 'Home' }
+            path: '/art/commisions/sketches',
+            component: () => import('../views/03_art/00_commisions/04_sketchesView.vue'),
+            meta: { title: 'Sketches commision info' }
         },
         {
-            path: '/:pathMatch(.*)*',
-            component: NotFoundView,
-            meta: { title: 'PAGE NOT FOUND' }
+            path: '/art/commisions/color',
+            component: () => import('../views/03_art/00_commisions/05_colorView.vue'),
+            meta: { title: 'Color commision info' }
         },
+        {
+            path: '/art/commisions/render',
+            component: () => import('../views/03_art/00_commisions/06_renderView.vue'),
+            meta: { title: 'Render commision info' }
+        },
+        {
+            path: '/art/my-works',
+            component: () => import('../views/03_art/01_works/00_myWorksView.vue'),
+            meta: { title: 'My works' }
+        },
+        // 404
+        {
+            path: '/:pathMatch(.*)*',
+            component: () => import('../views/notFoundView.vue'),
+            meta: { title: 'PAGE NOT FOUND' }
+        }
     ]
 })
 
