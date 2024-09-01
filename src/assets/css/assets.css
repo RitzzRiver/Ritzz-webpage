@@ -1,0 +1,22 @@
+:root {
+    --main-color1: #dcdcd0;
+    --main-color2: #8e9b90;
+    --main-color3: #93c0a4;
+    --main-color4: #d4cdab;
+    --text-color: #545D57;
+    --button1: #906e8f;
+    --button1-hov: #9a7b99;
+
+    --background-image: url('../background2.jpg');
+}
+
+.shantell-sans-font {
+    font-family: 'Shantell Sans', cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        'BNCE' 0,
+        'INFM' 0,
+        'SPAC' 0;
+}

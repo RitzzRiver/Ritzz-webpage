@@ -2,7 +2,7 @@
 import { useRouter } from 'vue-router'
 const rootlinks = {
     commisions:{
-        link: "/art/commisions",
+        link: "/commisions",
     },
     works:{
         link: "/art/my-works",
@@ -11,19 +11,27 @@ const rootlinks = {
 
 const routerLink = useRouter()
 
-const navigate1 = () => {
+const navigateHome = () => {
+    routerLink.push("/art")
+}
+const navigateCommisions = () => {
     routerLink.push(rootlinks.commisions.link)
 }
-const navigate2 = () => {
+const navigatePortfolio = () => {
     routerLink.push(rootlinks.works.link)
 }
 </script>
 
 <template>
-    <p>RitzzRiver</p>
+    <a href="/">
+        <p>RitzzRiver</p>
+    </a>
     <div id="buttons">
-        <button @click="navigate1">Commisions</button>
-        <button @click="navigate2">My Works</button>
+        <ul>
+            <li><a href="javascript:void(0)" @click="navigateHome">Home</a></li>
+            <li><a href="javascript:void(0)" @click="navigateCommisions">Commisions</a></li>
+            <li><a href="javascript:void(0)" @click="navigatePortfolio">Portfolio</a></li>
+        </ul>
     </div>
 </template>
 

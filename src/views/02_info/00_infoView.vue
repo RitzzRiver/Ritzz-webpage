@@ -25,7 +25,7 @@ import BWTI from '../../components/ButtonWithTextAndIcon.vue'
                 </div>
     
                 <div class="buttons-container">
-                    <BWTI class="buttons" button-text="about me" link="/info/about/">
+                    <BWTI class="buttons" button-text="about me" link="/about-me/">
                         <img
                             class="buttonIcon"
                             src="../../components/icons/info-circle.png"
@@ -42,7 +42,7 @@ import BWTI from '../../components/ButtonWithTextAndIcon.vue'
                             width="24"
                         />
                     </BWTI>
-                    <BWTI class="buttons" button-text="Commisions (currently on wip)" link="/art/commisions/terms-of-service" disabled="true">
+                    <BWTI class="buttons" button-text="Commisions (currently on wip)" link="/commisions/terms-of-service" disabled="true">
                         <img class="buttonIcon" src="../../components/icons/store.png" width="24" />
                     </BWTI>
                 </div>

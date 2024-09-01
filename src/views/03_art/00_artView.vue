@@ -6,11 +6,10 @@ import footerComponent from '@/components/01_footer/01_art/footerComponent.vue'
 <template>
     <div class="landing">
         <header>
-            <headerComponent/>
+            <headerComponent />
         </header>
         <main>
-            <p>Hewo, I'm Ritzz a Colombian artist mostly inspired in indie games</p>
-            <h1>Art landing page</h1>
+            <p>Hewo, I'm Ritzz a Colombian artist<br />mostly inspired in indie games</p>
         </main>
         <footer>
             <footerComponent></footerComponent>
@@ -19,4 +18,12 @@ import footerComponent from '@/components/01_footer/01_art/footerComponent.vue'
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+main p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+</style>

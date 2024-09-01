@@ -10,15 +10,15 @@ import { links } from '@/assets/js/information.js'
                 <ul>
                     <li><a href="/">landing page</a></li>
                     <li><a href="/art">art page</a></li>
-                    <li><a href="/info/about">about me</a></li>
-                    <li><a href="/art/commisions/terms-of-service">terms of service</a></li>
-                    <li><a href="/art/commisions/terminos-de-servicio">terminos de servicio</a></li>
+                    <li><a href="/about-me">about me</a></li>
+                    <li><a href="/commisions/terms-of-service">terms of service</a></li>
+                    <li><a href="/commisions/terminos-de-servicio">terminos de servicio</a></li>
                 </ul>
             </div>
             <div class="footer-links">
                 <h4>Contact</h4>
                 <ul>
-                    <li><a href="/info/contact">find me</a></li>
+                    <li><a href="/contact">find me</a></li>
                 </ul>
             </div>
 

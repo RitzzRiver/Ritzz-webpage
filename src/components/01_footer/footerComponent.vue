@@ -1,5 +1,5 @@
 <script setup>
-import { links } from '@/assets/js/information.js'
+// import { links } from '@/assets/js/information.js'
 </script>
 
 <template>
@@ -14,9 +14,10 @@ import { links } from '@/assets/js/information.js'
                 </ul>
             </div>
 
-            <div class="footer-links">
+            <!-- <div class="footer-links">
                 <h4>social links</h4>
                 <div class="social-links">
+                    
                     <a :href="links.mail.link"><i class="fa-solid fa-envelope"></i></a>
                     <a :href="links.twitter.link" target="_blank"
                         ><i class="fa-brands fa-twitter"></i
@@ -28,7 +29,7 @@ import { links } from '@/assets/js/information.js'
                         ><i class="fa-brands fa-telegram"></i
                     ></a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </template>

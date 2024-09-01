@@ -7,10 +7,10 @@ const route = useRoute()
 watch(route, (newRoute) => {
     const path = newRoute.path
     if (path.startsWith('/info')) {
-        document.body.style.backgroundImage = 'var(--art-background-image)';
+        document.body.style.backgroundImage = 'var(--background-image)';
     }
     else {
-        document.body.style.backgroundColor = '#FDFCDC';
+        document.body.style.backgroundColor = 'var(--main-color1)';
     }
 })
 </script>
