@@ -1,5 +1,8 @@
 <script setup>
 import { useRouter } from 'vue-router';
+
+import { commisionStatus } from '@/assets/js/information';
+
 import headerComponent from '@/components/00_header/01_art/headerComponent.vue'
 import footerComponent from '@/components/01_footer/01_art/footerComponent.vue'
 
@@ -37,7 +40,7 @@ const tds = () => {
         <main>
             <div class="commisions-info">
                 <p>Currently my commisions are:</p>
-                <p class="status">status</p>
+                <span class="status">{{ commisionStatus }}</span>
             </div>
             <div class="commisions-currency-info">
                 <p>Select your preferred currency to continue</p>

@@ -1,84 +1,62 @@
-<script setup></script>
+<script setup>
+import headerComponent from '@/components/00_header/01_art/headerComponent.vue';
+import { favGames } from '@/assets/js/gallery'
+</script>
 
 <template>
+    <header>
+        <headerComponent/>
+    </header>
     <main>
         <div class="main-container">
             <div class="panel">
-                <p class="title">about me</p>
-                <p class="info">
-                    Heya I'm Ritzz
-                    <br />
-                    I'm a Colombian 20 years old student of software development currently waiting
-                    start the career of plastic arts.
-                    <br />
-                    I'm too way reserved with all related with my life, but if you need a favor, go
-                    on I'll try to help you :3
-                    <br />
-                    I am mostly interested in arts, emotive indie games (like celeste, transistor or
-                    eastward) and furry stuff (yes,
-                    <a href="https://www.youtube.com/shorts/Un3gfp0QO2g" target="_blank"
-                        >I'm a furry</a
-                    >).
-                    <br />
-                    I also collaborated in the translation of Undertale yellow and hope to begin to
-                    develope some games soon You can check my art and my projects here I
-                    collaborated in the translation of
-                    <a href="https://gamejolt.com/games/undertaleyellowesp/867360" target="_blank"
-                        >Undertale yellow</a
-                    >
-                </p>
+                <article class="about">
+                    <p>Heyaaaaa~</p>
+                    <p>
+                        My name is Kris, better known as Ritzz. I'm a 20 years old colombian artist
+                        who likes nature and fantasy. I am inspirated by the emotions and indie
+                        games.
+                    </p>
+                    <p>My journey?</p>
+                    <p>
+                        I started in 2018 with a close friend who also draws a lot. And it awaked me
+                        the sensation of materialize or almost give a visual concept of a existent
+                        idea, also because I looks great to transform the reality at your desire
+                        haha. So I decided to make it a hobby, but it was in 2020 in quarentine with
+                        a teacher who doesnt put much effort in art, so there is the second reason
+                        to choose arts: the way to express yourself with a image. and finally, on
+                        2021 a real teacher of arts gives me the help to grow as an artist with how
+                        to draw (at least with the basics) and the history what is a really
+                        marvelous thing.
+                    </p>
+                    <p>
+                        In 2022 I went to a Fine Arts school to learn more but... It wasn't that I
+                        was specting because all the topics where given in a short time and I don't
+                        feel good with only know the basics. If I want to get good at art I need to
+                        have good bases. unfortunately, the career of Arts isn't here in my city BUT
+                        hey I'm waiting to travel and purse that career.
+                    </p>
+                    <p>
+                        Currently I have a few bases about color, history, painting, etc. So I can
+                        do basic stuff with it, I try to do my best with grow with art, at least
+                        watching videos or drawing small sketches for me or my friends
+                    </p>
+                    <p>
+                        I am too way reserved with strangers, so please be patient with me :3 And
+                        yes, if you where asking:
+                        <a href="https://www.youtube.com/shorts/Un3gfp0QO2g" target="_blank">
+                            I'm a furry
+                        </a>
+                    </p>
+                </article>
             </div>
             <div class="panel">
                 <p class="title">my fave games</p>
-                <div class="games">
-                    <img src="../../assets/games/celeste.png" height="400" width="280" />
-                    <img src="../../assets/games/dd.png" height="400" width="280" />
-                    <img src="../../assets/games/eastward.png" height="400" width="280" />
-                    <img src="../../assets/games/furi.png" height="400" width="280" />
-                    <img src="../../assets/games/hades.png" height="400" width="280" />
-                    <img src="../../assets/games/hld.png" height="400" width="280" />
-                    <img src="../../assets/games/k0.png" height="400" width="280" />
-                    <img src="../../assets/games/ror2.png" height="400" width="280" />
-                    <img src="../../assets/games/tcm.png" height="400" width="280" />
-                    <img src="../../assets/games/transistor.png" height="400" width="280" />
-                    <img src="../../assets/games/tunic.png" height="400" width="280" />
-                </div>
-            </div>
-            <div class="panel">
-                <p class="title">my top 3 songs</p>
-                <p class="subtitle">top 3</p>
-                <iframe
-                    style="border-radius: 12px"
-                    src="https://open.spotify.com/embed/track/5XpJOQgVEuM1FzgeGXzUvk?utm_source=generator&theme=0"
-                    width="50%"
-                    height="400"
-                    frameBorder="0"
-                    allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"
-                ></iframe>
-                <p class="subtitle">top 2</p>
-                <iframe
-                    style="border-radius: 12px"
-                    src="https://open.spotify.com/embed/track/15geVctY3jvUuDkEAaQPdV?utm_source=generator&theme=0"
-                    width="50%"
-                    height="400"
-                    frameBorder="0"
-                    allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"
-                ></iframe>
-                <p class="subtitle">top 1</p>
-                <iframe
-                    style="border-radius: 12px"
-                    src="https://open.spotify.com/embed/track/7Gk8icymiW50sDfFbWLoVG?utm_source=generator&theme=0"
-                    width="50%"
-                    height="400"
-                    frameBorder="0"
-                    allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"
-                ></iframe>
+                <article class="games">
+                    <div class="game-show" v-for="game in favGames" :key="game">
+                        <img :src="game" height="400" width="280" />
+                    </div>
+                </article>
             </div>
         </div>
     </main>

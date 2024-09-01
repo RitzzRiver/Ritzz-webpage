@@ -14,75 +14,101 @@ const router = createRouter({
         },
 
         // dev
-        {
-            path: '/dev',
-            component: () => import('../views/devPage.vue'),
-            meta: { title: 'Dev page' }
-        },
+        // {
+        //     path: '/dev',
+        //     component: () => import('../views/devPage.vue'),
+        //     meta: { title: 'Dev page' }
+        // },
 
         // info
-        {
-            path: '/about',
-            component: () => import('../views/02_info/00_infoView.vue'),
-            meta: { title: 'Main page' }
-        },
-        {
-            path: '/about-me',
-            component: () => import('../views/02_info/01_aboutView.vue'),
-            meta: { title: 'About' }
-        },
-        {
-            path: '/contact',
-            component: () => import('../views/02_info/02_contactView.vue'),
-            meta: { title: 'Contact' }
-        },
-        {
-            path: '/about/preferences',
-            component: () => import('../views/02_info/03_preferencesView.vue'),
-            meta: { title: 'Likes and dislikes' }
-        },
-
+        // {
+        //     path: '/about-me',
+        //     component: () => import('../views/02_info/01_aboutView.vue'),
+        //     meta: { title: 'About' }
+        // },
+        // {
+        //     path: '/contact',
+        //     component: () => import('../views/02_info/02_contactView.vue'),
+        //     meta: { title: 'Contact' }
+        // },
+        // {
+        //     path: '/about/preferences',
+        //     component: () => import('../views/02_info/03_preferencesView.vue'),
+        //     meta: { title: 'Likes and dislikes' }
+        // },
         // art
         {
             path: '/art',
             component: () => import('../views/03_art/00_artView.vue'),
             meta: { title: 'Art page' }
         },
+        // {
+        //     path: '/commisions',
+        //     component: () => import('../views/03_art/00_commisions/00_infoView.vue'),
+        //     meta: { title: 'Commisions info' }
+        // },
+        // {
+        //     path: '/commisions/terms-of-service',
+        //     component: () => import('../views/03_art/00_commisions/02_TOSView.vue'),
+        //     meta: { title: 'Terms of service' }
+        // },
+        // {
+        //     path: '/commisions/terminos-de-servicio',
+        //     component: () => import('../views/03_art/00_commisions/03_TDSView.vue'),
+        //     meta: { title: 'Terminos de servicio' }
+        // },
+        // {
+        //     path: '/commisions/sketches',
+        //     component: () => import('../views/03_art/00_commisions/04_sketchesView.vue'),
+        //     meta: { title: 'Sketches commision info' }
+        // },
+        // {
+        //     path: '/commisions/color',
+        //     component: () => import('../views/03_art/00_commisions/05_colorView.vue'),
+        //     meta: { title: 'Color commision info' }
+        // },
+        // {
+        //     path: '/commisions/render',
+        //     component: () => import('../views/03_art/00_commisions/06_renderView.vue'),
+        //     meta: { title: 'Render commision info' }
+        // },
+        // {
+        //     path: '/art/my-works',
+        //     component: () => import('../views/03_art/01_works/00_myWorksView.vue'),
+        //     meta: { title: 'My works' }
+        // },
+
+        // Woops
+        {
+            path: '/whops',
+            component: () => import('../views/whopsView.vue'),
+            meta: { title: '⚠️ whops ⚠️'}
+        },
+        {
+            path: '/dev',
+            redirect: '/whops',
+        },
         {
             path: '/commisions',
-            component: () => import('../views/03_art/00_commisions/00_infoView.vue'),
-            meta: { title: 'Commisions info' }
-        },
-        {
-            path: '/commisions/terms-of-service',
-            component: () => import('../views/03_art/00_commisions/02_TOSView.vue'),
-            meta: { title: 'Terms of service' }
-        },
-        {
-            path: '/commisions/terminos-de-servicio',
-            component: () => import('../views/03_art/00_commisions/03_TDSView.vue'),
-            meta: { title: 'Terminos de servicio' }
-        },
-        {
-            path: '/commisions/sketches',
-            component: () => import('../views/03_art/00_commisions/04_sketchesView.vue'),
-            meta: { title: 'Sketches commision info' }
-        },
-        {
-            path: '/commisions/color',
-            component: () => import('../views/03_art/00_commisions/05_colorView.vue'),
-            meta: { title: 'Color commision info' }
-        },
-        {
-            path: '/commisions/render',
-            component: () => import('../views/03_art/00_commisions/06_renderView.vue'),
-            meta: { title: 'Render commision info' }
+            redirect: '/whops',
         },
         {
             path: '/art/my-works',
-            component: () => import('../views/03_art/01_works/00_myWorksView.vue'),
-            meta: { title: 'My works' }
+            redirect: '/whops',
         },
+        {
+            path: '/about-me',
+            redirect: '/whops',
+        },
+        {
+            path: '/commisions/terms-of-service',
+            redirect: '/whops',
+        },
+        {
+            path: '/commisions/terminos-de-servicio',
+            redirect: '/whops',
+        },
+
         // 404
         {
             path: '/:pathMatch(.*)*',

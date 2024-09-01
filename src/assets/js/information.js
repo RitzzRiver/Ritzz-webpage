@@ -1,7 +1,21 @@
-const sketchPricesvalue = [5000, 10000, 20000];
-const colorPricesvalue = [15000, 20000, 25000];
-const renderPricesvalue = [25000, 30000, 35000];
-const actualUSD = 4085.60;
+const sketchPricesvalue = [5000, 10000, 20000]
+const colorPricesvalue = [15000, 20000, 25000]
+const renderPricesvalue = [25000, 30000, 35000]
+const actualUSD = 4085.6
+export const commisionStatus = 'closed'
+
+export const details = [
+    'INFJ-T',
+    '↪️ HSP ↩️',
+    'Ambivert',
+    'Cold personality',
+    'Experimental artist',
+    '😺 Kitty cat cat 😺',
+    '🔃 Roguelike enjoyer 🔄️',
+    '✨ They/them ✨',
+    'Demisexual 🖤🩶🤍💜',
+    'Pansexual 🩷💛🩵'
+]
 
 // PreferencesView
 export const likes = [
@@ -86,50 +100,49 @@ export const PaymentsAndRefoundsTOS_ES = [
 
 // social media links
 export const links = {
-
     twitter: {
-        link: "https://twitter.com/RitzzRiver",
+        link: 'https://twitter.com/RitzzRiver'
     },
     github: {
-        link: "https://www.github.com/RitzzRiver",
+        link: 'https://www.github.com/RitzzRiver'
     },
     mail: {
-        link: "mailto:ritzzriver@gmail.com",
+        link: 'mailto:ritzzriver@gmail.com'
     },
     telegram: {
-        link: "https://t.me/StarlightDreamer56",
-    },
+        link: 'https://t.me/StarlightDreamer56'
+    }
 }
 
 // Commisions table prices
 export const sketchPricesCOP = [
     'Headshot: $' + sketchPricesvalue[0],
     'Halfbody: $' + sketchPricesvalue[1],
-    'Fullbody: $' + sketchPricesvalue[2],
+    'Fullbody: $' + sketchPricesvalue[2]
 ]
 export const colorPricesCOP = [
     'Headshot: $' + colorPricesvalue[0],
     'Halfbody: $' + colorPricesvalue[1],
-    'Fullbody: $' + colorPricesvalue[2],
+    'Fullbody: $' + colorPricesvalue[2]
 ]
 export const renderPricesCOP = [
     'Headshot: $' + renderPricesvalue[0],
     'Halfbody: $' + renderPricesvalue[1],
-    'Fullbody: $' + renderPricesvalue[2],
+    'Fullbody: $' + renderPricesvalue[2]
 ]
 
 export const sketchPricesUSD = [
-    'Headshot: $' + Math.round(sketchPricesvalue[0]/actualUSD),
-    'Halfbody: $' + Math.round(sketchPricesvalue[1]/actualUSD),
-    'Fullbody: $' + Math.round(sketchPricesvalue[2]/actualUSD),
+    'Headshot: $' + Math.round(sketchPricesvalue[0] / actualUSD),
+    'Halfbody: $' + Math.round(sketchPricesvalue[1] / actualUSD),
+    'Fullbody: $' + Math.round(sketchPricesvalue[2] / actualUSD)
 ]
 export const colorPricesUSD = [
-    'Headshot: $' + Math.round(colorPricesvalue[0]/actualUSD),
-    'Halfbody: $' + Math.round(colorPricesvalue[1]/actualUSD),
-    'Fullbody: $' + Math.round(colorPricesvalue[2]/actualUSD),
+    'Headshot: $' + Math.round(colorPricesvalue[0] / actualUSD),
+    'Halfbody: $' + Math.round(colorPricesvalue[1] / actualUSD),
+    'Fullbody: $' + Math.round(colorPricesvalue[2] / actualUSD)
 ]
 export const renderPricesUSD = [
-    'Headshot: $' + Math.round(renderPricesvalue[0]/actualUSD),
-    'Halfbody: $' + Math.round(renderPricesvalue[1]/actualUSD),
-    'Fullbody: $' + Math.round(renderPricesvalue[2]/actualUSD),
+    'Headshot: $' + Math.round(renderPricesvalue[0] / actualUSD),
+    'Halfbody: $' + Math.round(renderPricesvalue[1] / actualUSD),
+    'Fullbody: $' + Math.round(renderPricesvalue[2] / actualUSD)
 ]

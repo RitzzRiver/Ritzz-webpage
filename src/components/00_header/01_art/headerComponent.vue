@@ -1,6 +1,12 @@
 <script setup>
 import { useRouter } from 'vue-router'
 const rootlinks = {
+    Home: {
+        link: "/art",
+    },
+    aboutme: {
+        link: "/about-me"
+    },
     commisions:{
         link: "/commisions",
     },
@@ -10,9 +16,11 @@ const rootlinks = {
 }
 
 const routerLink = useRouter()
-
 const navigateHome = () => {
-    routerLink.push("/art")
+    routerLink.push(rootlinks.Home.link)
+}
+const navigateAbout = () => {
+    routerLink.push(rootlinks.aboutme.link)
 }
 const navigateCommisions = () => {
     routerLink.push(rootlinks.commisions.link)
@@ -29,6 +37,7 @@ const navigatePortfolio = () => {
     <div id="buttons">
         <ul>
             <li><a href="javascript:void(0)" @click="navigateHome">Home</a></li>
+            <li><a href="javascript:void(0)" @click="navigateAbout">About me</a></li>
             <li><a href="javascript:void(0)" @click="navigateCommisions">Commisions</a></li>
             <li><a href="javascript:void(0)" @click="navigatePortfolio">Portfolio</a></li>
         </ul>
