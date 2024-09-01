@@ -1,13 +1,13 @@
 <script setup></script>
 
 <template>
-    <div class="e404">
-        <h2>The page was not found.</h2>
+    <div class="whops">
+        <h2>The page you requested is under construction.</h2>
     </div>
 </template>
 
 <style scoped>
-.e404 {
+.whops {
     display: flex;
     margin-top: 25%;
     align-items: center;

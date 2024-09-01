@@ -1,0 +1,51 @@
+header {
+    display: flex;
+    background-color: var(--main-color4);
+    justify-content: space-between;
+    padding: 10px;
+
+    a {
+        font-family: 'Nerko One', cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+
+        p {
+            margin-left: 30px;
+        }
+    }
+    a:not(:visited) {
+        color: var(--text-color);
+    }
+    a:visited {
+        color: var(--text-color);
+    }
+
+    #buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    button {
+        font-family: 'Nerko One', cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+
+        display: flex;
+        padding: 10px 60px;
+        border-color: transparent;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: var(--button1);
+        transition: all 0.5s ease;
+    }
+
+    button:hover {
+        background-color: var(--button1-hov);
+    }
+}

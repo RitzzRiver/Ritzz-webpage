@@ -1,0 +1,96 @@
+footer {
+    font-family: 'Nerko One', cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    background-color: var(--main-color3);
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        left: 50%;
+        text-transform: capitalize;
+    }
+
+    .footer-row {
+        display: flex;
+        flex-wrap: wrap;
+
+        h4 {
+            font-size: 40px;
+            color: var(--text-color);
+            margin-bottom: 25px;
+            border-bottom: 2px solid var(--main-color4);
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+    }
+
+    .footer-links {
+        width: 30%;
+        padding: 0 15px;
+
+        p {
+            color: var(--text-color);
+            font-size: 20px;
+        }
+
+        ul li {
+            margin-left: -30px;
+            font-size: 30px;
+            text-decoration: none;
+            color: var(--text-color);
+            display: block;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+
+            a {
+                text-decoration: none;
+            }
+            :not(:visited) {
+                color: var(--text-color);
+            }
+            :visited {
+                color: var(--text-color);
+            }
+            a:hover {
+                color: var(--main-color4);
+                text-decoration: underline solid var(--text-color);
+                padding-left: 6px;
+            }
+        }
+    }
+
+    .social-links {
+        a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 40px;
+            width: 40px;
+            background-color: var(--text-color);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: var(--text-color);
+            transition: all 0.5s ease;
+            text-decoration: none;
+
+            i {
+                font-size: 20px;
+                color: var(--main-color4);
+            }
+        }
+        a:hover {
+            background-color: var(--main-color4);
+            i {
+                color: var(--text-color);
+            }
+        }
+    }
+
+    .copyright {
+        background-color: var(--main-color4);
+    }
+}

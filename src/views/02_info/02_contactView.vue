@@ -5,9 +5,6 @@
 <template>
     <main>
         <section class="main-container">
-            <BWI class="button" link="/art">
-                <img src="../../components/icons/home.png"/>
-            </BWI>
             <p class="title">you can find me on</p>
             <a href="https://www.pinterest.es/StarlightDreamer56/" target="_blank">
                 <BWI class="button">
@@ -31,20 +28,11 @@
             </a>
         </section>
     </main>
+    <footer>
+        <p class="copyright">© 2024 RitzzRiver</p>
+    </footer>
 </template>
 
 <style scoped>
-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translate(0, 100%);
-}
 
-.button{
-    transform: translate(200%);
-}
-a .button{
-    transform: translate(40%);
-}
 </style>
